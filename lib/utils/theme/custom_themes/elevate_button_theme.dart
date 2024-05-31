@@ -4,7 +4,7 @@ class MyElevateButtonTheme{
   MyElevateButtonTheme._(); // Private constructor
 
   // Customizable Light Elevate Button Theme
-  static final ElevatedButtonThemeData lightElevateButtonTheme = ElevatedButtonThemeData(
+  static ElevatedButtonThemeData lightElevateButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
       foregroundColor: Colors.white,
@@ -18,7 +18,7 @@ class MyElevateButtonTheme{
   );
 
   // Customizable Dark Elevate Button Theme
-  static final ElevatedButtonThemeData darkElevateButtonTheme = ElevatedButtonThemeData(
+  static ElevatedButtonThemeData darkElevateButtonTheme = ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         elevation: 0,
         foregroundColor: Colors.white,
