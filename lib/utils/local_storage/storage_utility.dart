@@ -1,7 +1,7 @@
 import 'package:hive_flutter/hive_flutter.dart';
 
 class MyLocalStorage {
-  
+  // use Singleton Patter
   static final MyLocalStorage _instance = MyLocalStorage._internal();
 
   factory MyLocalStorage() {
