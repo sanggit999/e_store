@@ -1,4 +1,4 @@
-import 'package:e_store/features/authentication/screens/onboarding/login/login_screen.dart';
+import 'package:e_store/features/authentication/screens/login/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
