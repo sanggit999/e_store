@@ -11,6 +11,7 @@ class MyTexts{
   static const String onBoardingSubTitle2 = "Đối với các giao dịch liền mạch, hãy chọn đường thanh toán - sự thuận tiện của bạn, ưu tiên của chúng tôi";
   static const String onBoardingSubTitle3 = "Từ cửa của chúng tôi đến của bạn - giao hàng nhanh chóng, an toàn và không tiếp xúc";
 
+  static const String skip = "Bỏ qua";
   // Home Texts
   static const String homeAppBarTitle = "Ngày tốt để mua sắm";
   static const String homeAppBarSubTitle = "Nguyễn Văn Sáng";

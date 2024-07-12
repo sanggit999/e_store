@@ -20,6 +20,12 @@ class MySizes {
   static const double fontSizeMd = 16.0;
   static const double fontSizeLg = 18.0;
 
+  // Button sizes
+  static const double buttonHeight = 18.0;
+  static const double buttonRadius = 12.0;
+  static const double buttonWidth = 120.0;
+  static const double buttonElevation = 4.0;
+
   // Appbar height
   static const double appBarHeight = 56.0;
 
@@ -28,8 +34,8 @@ class MySizes {
 
   // Default spacing between sections
   static const double defaultSpace = 24.0;
-  static const double defaultBtwItem = 16.0;
-  static const double defaultBtwSections = 32.0;
+  static const double spaceBtwItem = 16.0;
+  static const double spaceBtwSections = 32.0;
 
   // Border radius
   static const double borderRadiusSm = 4.0;
