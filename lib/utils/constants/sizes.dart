@@ -52,7 +52,7 @@ class MySizes {
 
   // Input field
   static const double inputFieldRadius = 12.0;
-  static const double spaceBtwInputField = 16.0;
+  static const double spaceBtwInputField = 18.0;
 
   // Card sizes
   static const double cardRadiusXs = 6.0;
