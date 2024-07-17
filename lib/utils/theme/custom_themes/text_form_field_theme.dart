@@ -12,7 +12,7 @@ class MyTextFormFieldTheme{
     labelStyle: const TextStyle().copyWith(fontSize: 14.0,color: Colors.black),
     hintStyle: const TextStyle().copyWith(fontSize: 14.0,color: Colors.black),
     errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
-    floatingLabelStyle: const TextStyle().copyWith(color: Colors.black.withOpacity(0.8)),
+    floatingLabelStyle: const TextStyle().copyWith(color: Colors.black),
     border: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14.0),
       borderSide:const BorderSide(width: 1,color: Colors.grey),
@@ -23,7 +23,7 @@ class MyTextFormFieldTheme{
     ),
     focusedBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14.0),
-      borderSide:const BorderSide(width: 1,color: Colors.black12),
+      borderSide:const BorderSide(width: 1,color: Colors.black),
     ),
     errorBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14.0),
