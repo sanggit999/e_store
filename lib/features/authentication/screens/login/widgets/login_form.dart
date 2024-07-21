@@ -1,4 +1,6 @@
+import 'package:e_store/features/authentication/screens/password/forget_password_screen.dart';
 import 'package:e_store/features/authentication/screens/signup/signup_screen.dart';
+import 'package:e_store/navigation_menu.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
@@ -40,7 +42,13 @@ class LoginForm extends StatelessWidget {
                   ],
                 ),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const ForgetPasswordScreen()));
+                    },
                     child: const Text(MyTexts.forgetPassword)),
               ],
             ),
@@ -48,7 +56,13 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                  onPressed: () {}, child: const Text(MyTexts.signIn)),
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const NavigationMenu()));
+                  },
+                  child: const Text(MyTexts.signIn)),
             ),
             const SizedBox(height: MySizes.spaceBtwItem),
             SizedBox(

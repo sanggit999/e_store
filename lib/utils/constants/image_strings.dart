@@ -12,4 +12,7 @@ class MyImages {
   static const String onBoardingImage1 = "assets/images/on_boarding_images/onboard1.gif";
   static const String onBoardingImage2 = "assets/images/on_boarding_images/onboard2.gif";
   static const String onBoardingImage3 = "assets/images/on_boarding_images/onboard3.gif";
+
+  static const String verifyEmail = "assets/images/verify-email.png";
+  static const String success = "assets/images/success.png";
 }

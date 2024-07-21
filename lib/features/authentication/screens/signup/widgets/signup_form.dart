@@ -1,3 +1,4 @@
+import 'package:e_store/features/authentication/screens/signup/verify_email_screen.dart';
 import 'package:e_store/features/authentication/screens/signup/widgets/terms_condition_checkbox.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/sizes.dart';
@@ -20,19 +21,19 @@ class SignupForm extends StatelessWidget {
             children: [
               Expanded(
                   child: TextFormField(
-                    decoration: const InputDecoration(
-                        labelText: MyTexts.firstName,
-                        prefixIcon: Icon(Icons.person_outline)),
-                  )),
+                decoration: const InputDecoration(
+                    labelText: MyTexts.firstName,
+                    prefixIcon: Icon(Icons.person_outline)),
+              )),
               const SizedBox(
                 width: MySizes.spaceBtwInputField,
               ),
               Expanded(
                   child: TextFormField(
-                    decoration: const InputDecoration(
-                        labelText: MyTexts.lastName,
-                        prefixIcon: Icon(Icons.person_outline)),
-                  )),
+                decoration: const InputDecoration(
+                    labelText: MyTexts.lastName,
+                    prefixIcon: Icon(Icons.person_outline)),
+              )),
             ],
           ),
           const SizedBox(height: MySizes.spaceBtwInputField),
@@ -66,7 +67,9 @@ class SignupForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>const VerifyEmailScreen()));
+              },
               child: const Text(MyTexts.createAccount),
             ),
           ),
@@ -75,4 +78,3 @@ class SignupForm extends StatelessWidget {
     );
   }
 }
-
