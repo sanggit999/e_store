@@ -1,6 +1,5 @@
 import 'package:e_store/features/authentication/screens/signup/verify_email_screen.dart';
 import 'package:e_store/features/authentication/screens/signup/widgets/terms_condition_checkbox.dart';
-import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
@@ -68,7 +67,10 @@ class SignupForm extends StatelessWidget {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>const VerifyEmailScreen()));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const VerifyEmailScreen()));
               },
               child: const Text(MyTexts.createAccount),
             ),

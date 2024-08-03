@@ -1,3 +1,4 @@
+import 'package:e_store/features/shop/screens/home/home_screen.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/helper/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +15,7 @@ class _NavigationMenuState extends State<NavigationMenu> {
   int currentPageIndex = 0;
 
   final List<Widget> screens = [
-    Container(color: Colors.green),
+    const HomeScreen(),
     Container(color: Colors.purple),
     Container(color: Colors.orange),
     Container(color: Colors.blue),

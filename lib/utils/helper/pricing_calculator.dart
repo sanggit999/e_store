@@ -1,7 +1,4 @@
-import 'package:flutter/cupertino.dart';
-
 class MyPricingCalculator {
-
   // Calculator price based on tax and shipping
   static double calculateTotalPrice(double productPrice, String location) {
     double taxRate = getTaxRateForLocation(location);
@@ -13,19 +10,19 @@ class MyPricingCalculator {
     return totalPrice;
   }
 
-
-  static String calculateShippingCost(double productPrice,String location){
+  static String calculateShippingCost(double productPrice, String location) {
     double shippingCost = getShippingCost(location);
     return shippingCost.toStringAsFixed(3);
   }
 
-  static String calculateTax(double productPrice,String location){
+  static String calculateTax(double productPrice, String location) {
     double taxRate = getTaxRateForLocation(location);
     double taxAmount = productPrice * taxRate;
     return taxAmount.toStringAsFixed(3);
   }
+
   static double getTaxRateForLocation(String location) {
-    return 0.10;  // Tax rate of 10%
+    return 0.10; // Tax rate of 10%
   }
 
   static double getShippingCost(String location) {
